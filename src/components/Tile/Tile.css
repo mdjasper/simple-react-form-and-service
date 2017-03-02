@@ -17,4 +17,5 @@
 
 .tile section{
     flex: 3;
+    text-align: left;
 }

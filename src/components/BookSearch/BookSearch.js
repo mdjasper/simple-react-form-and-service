@@ -1,7 +1,7 @@
 import React from 'react';
-import Form from './Form';
-import Tile from './Tile';
-import bookApi from './services/bookApi.js';
+import Form from '../Form';
+import Tile from '../Tile';
+import bookApi from '../../services/bookApi.js';
 
 class FormView extends React.Component{
 
@@ -28,14 +28,15 @@ class FormView extends React.Component{
     render(){
         return(        
             <div>
-                <h1>Form View</h1>
+                <h1>Book Search</h1>
                 <Form submitAction={this.action} />
 
                 {
-                    this.state.books.map(book => (
+                    this.state.books.map((book, key) => (
                         <Tile
                             title={book.title}
                             img={book.imageLinks.thumbnail}
+                            key={key}
                          />
                     ))
                 }
