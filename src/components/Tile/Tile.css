@@ -2,9 +2,9 @@
     display: flex;
     max-width: 800px;
     margin: 1em auto;
-    background: linear-gradient(135deg, #9dd53a 0%,#a1d54f 77%,#80c217 95%,#7cbc0a 100%);
-    border: 0.5em solid rgba(0,100,0,0.5);
-    border-radius: 1em;
+    background: linear-gradient(45deg, #d2ff52 79%,#91e842 79%);
+    /*border: 0.1em solid rgba(0,100,0,0.3);*/
+    border-radius: 0.5em;
 }
 
 .tile figure{
