@@ -19,3 +19,7 @@
     flex: 3;
     text-align: left;
 }
+
+.tile p{
+    margin-right:2em;
+}
