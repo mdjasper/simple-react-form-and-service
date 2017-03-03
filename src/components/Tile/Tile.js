@@ -4,7 +4,7 @@ import './Tile.css'
 export default ({
     img = "", 
     title = "TITLE MISSING",
-    subTitle=""
+    description, subTitle
 }) => (
     <div className="tile">
         <figure>
@@ -12,7 +12,8 @@ export default ({
         </figure>
         <section>
             <h2>{title}</h2>
-            <p>{subTitle}</p>
+            {subTitle && <h3>{subTitle}</h3>}
+            {description && <p>{description}</p>}
         </section>
     </div>
 );
